@@ -1,10 +1,9 @@
 // Exercise #1: Event Conditions
 
 // Start coding here
-let isOver18;
-let hasNoCriminalBlacklist;
-let isThai;
+let isOver18 = true;
+let hasNoCriminalBlacklist = true;
+let isThai = false;
 
-let isAllow;
-
+let isAllow = (isOver18 && hasNoCriminalBlacklist) || isThai;
 console.log(isAllow);
