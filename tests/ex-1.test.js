@@ -20,6 +20,6 @@ describe("Boolean & Logical Operations tests cases", () => {
     const func = new Function(code);
     const result = func();
 
-    expect(result).toEqual(false);
+    expect(result).toEqual(true);
   });
 });

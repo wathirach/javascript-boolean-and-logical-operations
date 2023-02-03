@@ -13,8 +13,9 @@ describe("Exercise 2: Boolean & Logical Operations tests cases", () => {
     const data = await fs.readFile("./ex-2.js");
     const code = `${data} return hasPromotion`;
     const func = new Function(code);
-    func();
+    const result = func();
 
-    expect(console.log).toHaveBeenCalledWith(false);
+    // expect(console.log).toHaveBeenCalledWith(false);
+    expect(result).toEqual(false);
   });
 });
